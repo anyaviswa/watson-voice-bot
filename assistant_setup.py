@@ -44,8 +44,7 @@ def init_skill(assistant_client):
     """
 
     # Get the actual workspaces
-    workspaces = assistant_client.list_workspaces().get_result()[
-        'workspaces']
+    workspaces = assistant_client.list_workspaces().get_result()['workspaces']
 
     env_workspace_id = os.environ.get('WORKSPACE_ID')
     if env_workspace_id:
